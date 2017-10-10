@@ -20,7 +20,8 @@ var html = "<p><h3>";
 //wordToGuess = words[Math.floor(Math.random() * words.length)];
 //var updateWordToGuess = function () {
 //};
-//Breaks word into array
+//Breaks word into array, sets letters to "false" and spaces to "true"
+//The reason will be explained later.
 function lettersArray() {
     for (var i = 0, j = 0; i < wordToGuess.length; i++) {
         wordLetters[j] = wordToGuess.charAt(i);
@@ -33,7 +34,7 @@ function lettersArray() {
         } j++
     }
 }
-
+//Debugging
 function consoleLogs() {
     console.log("wins: " + wins + "\n" + "losses: " + losses + "\n");
     console.log("guessesLeft: " + guessesLeft + "\n");
