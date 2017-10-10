@@ -6,7 +6,7 @@ var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
 //Sets everything to base numbers
 var wins = 0;
 var losses = 0;
-var guessesLeft = 6;
+var guessesLeft = 9;
 var guessedLetters = [];
 var userGuess = null;
 var wordToGuess = words[Math.floor(Math.random() * words.length)];
@@ -48,7 +48,7 @@ var updateGuessedLetters = function () {
 };
 //Resets Everything
 function reset() {
-    guessesLeft = 6;
+    guessesLeft = 9;
     guessedLetters = [];
     wordToGuess = words[Math.floor(Math.random() * words.length)];
     wordLetters = [];
@@ -57,6 +57,7 @@ function reset() {
 
     //updateGuessesLeft();
     //updateGuessedLetters();
+    //
     for (var i = 0; i < wordToGuess.length; i += 1) {
         if (wordToGuess.charAt(i) === " ") {
             htmlGame += "&nbsp;&nbsp;";
@@ -65,7 +66,7 @@ function reset() {
             htmlGame += "_&nbsp;";
         };
     };
-
+//
     htmlGame += "</h3></p>";
     document.getElementById("game").innerHTML = htmlGame;
     var htmlStats = "<p><h3>" + "Wins: " + wins + " Losses: " + losses + " Guesses Left : " + guessesLeft + "</h3></p>";
