@@ -204,8 +204,6 @@ document.onkeyup = function(event) {
 
   progress();
 
-  consoleLogs();
-
   resetHTML();
 
   userWin();
