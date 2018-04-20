@@ -4,33 +4,43 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-FzkHk/sZxl/KbNoSMiA0TgjqdV7ka8VPX/i/Nf2EyhH28i1EVaZ7uf2EEDBBHBo5"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Hangbot 3017!</h1>
-    </header>
-    <h4>This is Futurama themed. I'm too tired to do CSS right now. The thing mostly works, so</h4>
-<h1 id="booyah"><em>BOOYAH</em></h1>
-<p>Oh, and this wasn't done til Monday night, so yeah, I know. It won't be graded.</p>
-    <div id="game">
+    <div class="background">
+        <header>
+            <img class="hangbot" src="./assets/images/hangbot.png" alt="Hangbot 3000!">
 
+            <img class="banner" src="assets/images/futurama.jpg" alt="Futurama Banner">
+        </header>
+        <h3>Choose a letter to begin!</h3>
+        <div class="row">
+            <div class="game col-md-6" id="game">
+
+            </div>
+            <div class="col-md-3>"></div>
+            <div class="col-md-3 game" id="stats">
+
+            </div>
+        </div>
+        <div id="guessesLeft">
+
+        </div>
+        <div class="game" id="lettersGuessed">
+
+        </div>
+        <div class="game" id="guesses">
+
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </div>
-    <div id="stats">
-
-    </div>
-    <div id="guessesLeft">
-
-    </div>
-    <div id="lettersGuessed">
-
-    </div>
-    <div id="guesses">
-
-    </div>
-
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-    
 </body>
 
 </html>

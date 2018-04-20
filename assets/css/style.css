@@ -1,0 +1,31 @@
+.background {
+    margin-left: 20px;
+    background-color: #4396d2
+}
+
+body {
+    background-color: #4396d2;
+}
+
+.hangbot {
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto -5px auto;
+}
+
+.banner {
+    max-width: 1400px;
+    height: auto;
+    display: block;
+    margin: -5px auto 10px auto;
+}
+
+.game {
+    float: left;
+    margin-left: 15px;
+}
+
+#stats {
+    float: right;
+}
