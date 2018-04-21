@@ -112,7 +112,7 @@ function reset() {
   htmlGame += "</h2></p>";
   document.getElementById("game").innerHTML = htmlGame;
   var htmlStats =
-    `<p><h4>Wins: ${wins}
+    `<p><h4 class='record'>Wins: ${wins}
     <br>Losses: ${losses} <br>Guesses Left: ${guessesLeft} 
     </h4></p>`;
   document.getElementById("stats").innerHTML = htmlStats;

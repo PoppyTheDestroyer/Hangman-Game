@@ -1,10 +1,5 @@
 .background {
-    margin-left: 20px;
     background-color: #4396d2
-}
-
-body {
-    background-color: #4396d2;
 }
 
 .hangbot {
@@ -24,8 +19,17 @@ body {
 .game {
     float: left;
     margin-left: 15px;
+    padding-left: 15px;
 }
 
 #stats {
     float: right;
+}
+
+html {
+    background-color: #4396d2;
+}
+
+.choose {
+    margin-left: 10px;
 }
